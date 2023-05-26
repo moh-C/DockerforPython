@@ -1,5 +1,5 @@
 FROM python:3
-LABEL maintainer kris@opencloudconsulting.net
+LABEL maintainer someone@somewhere.com
 WORKDIR /app
 COPY ./app .
 RUN pip install -r requirements.txt

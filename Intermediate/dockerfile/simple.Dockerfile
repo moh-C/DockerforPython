@@ -2,7 +2,7 @@
 FROM python:3
 
 # define Image Label
-LABEL maintainer kris@opencloudconsulting.net
+LABEL maintainer someone@somewhere.com
 
 # set working directory
 WORKDIR /app

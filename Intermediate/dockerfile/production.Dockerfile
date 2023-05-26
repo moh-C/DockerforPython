@@ -4,7 +4,7 @@ FROM $base:$tag
 ARG base
 ARG tag
 LABEL baseimage=$base:$tag
-LABEL maintainer=kris@opencloudconsulting.net
+LABEL maintainer=someone@somewhere.com
 # set SQLite3 DB file path
 ENV DATABASE_URL "sqlite:////data/boxes_db.sqlite3"
 # declare Mount Point

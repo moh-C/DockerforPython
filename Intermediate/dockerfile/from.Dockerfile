@@ -11,7 +11,7 @@ LABEL baseimage=$base:$tag
 ENV BASE_IMAGE=$base:$tag
 RUN echo $base:$tag > /tmp/base_img
 
-LABEL maintainer=kris@opencloudconsulting.net
+LABEL maintainer=someone@somewhere.com
 WORKDIR /app
 COPY ./app .
 RUN pip install -r requirements.txt
