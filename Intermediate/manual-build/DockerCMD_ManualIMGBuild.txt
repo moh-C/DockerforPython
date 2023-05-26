@@ -1,0 +1,7 @@
+docker pull jupyter/tensorflow-notebook
+docker run -d --name temp jupyter/datascience-notebook
+docker exec -it temp pip install torch torchvision 
+docker stop temp
+docker commit temp myjupyter:torch
+docker run -it --rm -p 8888:8888 -v ${PWD}:/home/MC/notebooks myjupyter:torch
+docker rm temp
